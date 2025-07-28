@@ -50,6 +50,7 @@
  * Arrays
  * similar to arrays in C. 
  * when declaring type, the form [type; length] is used
+ * there is also a shorthand to create repeating elements, e.g [3; 5] will create the array [3, 3, 3, 3, 3]
  */
 
  fn main(){
