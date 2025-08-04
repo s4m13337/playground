@@ -23,7 +23,7 @@ fn main() {
 
         let s1 = String::from("hello");
         let s2 = s1;
-        // String data consists of a ptr, len & capacity. The above statement sopies the string data, but the actual data to which the string points is not copied.
+        // String data consists of a ptr, len & capacity. The above statement copies the string data, but the actual data to which the string points is not copied.
         // Only the pointer is copied. Both s1 and s2 point to the same memory location.
         // This is a problem when s1 and s2 try to go out of scope, they try to free the same memory (double free error)
         // To prevent this error, when s1 is assigned to s2, the ownership is also transferred to s2 and s1 no longer owns the memory. We say s1 is moved to s2.
