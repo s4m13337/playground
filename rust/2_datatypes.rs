@@ -4,7 +4,7 @@
  * while it can infer the type in most cases based on the value, it is a better practice to type annotate
  * 
  * There are two primary datatype subsets: scaler and compound
- * Thera re are 4 scalar types
+ * There are are 4 scalar types
  * - integer
  * - float
  * - boolean
