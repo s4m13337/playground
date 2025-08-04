@@ -1,3 +1,9 @@
+/*
+ * Expressions vs Statements
+ * A statement ends with ; and returns nothing
+ * An expression does not end with ; and returns a value
+ */
+
 fn main() {
     println!("Main function!");
     external_function();
@@ -19,9 +25,3 @@ fn plus_one(n: i32) -> i32 {
 fn add_two(n: i32) -> i32 {
     n + 2
 }
-
-/*
- * Expressions vs Statements
- * A statement ends with ; and returns nothing
- * An expression does not end with ; and returns a value
- */
