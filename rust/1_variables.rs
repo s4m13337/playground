@@ -3,7 +3,7 @@ fn main() {
      * variables are immutable by default
      * trying to change the value of a variable throws error at compile time
      * add the keyworkd mut if you plan to change the value in future
-     * In rust, we say that value is bound to a varaible name instead of being assigned as in case of C
+     * In rust, we say that value is bound to a varaible name instead of being assigned as in case of
      */
     let mut x = 5;
     println!("The value of x is: {x}");
