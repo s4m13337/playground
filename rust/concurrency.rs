@@ -23,4 +23,18 @@ fn main() {
 
     // This blocks further execution of the main thread until handle is returned
     handle.join().unwrap();
+
+    /*
+        passing values from main thread to spawned thread
+    */
+    let v = vec![1, 2, 3];
+    let handle = thread::spawn(move || {
+        /* 
+            References passed from main thread are not guaranteed.
+            Therefore the ownership is moved to the spawned thread.
+        */
+        println!("Here's a vector {v:?}");
+    });
+
+    handle.join().unwrap();
 }
